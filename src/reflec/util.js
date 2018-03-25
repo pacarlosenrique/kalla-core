@@ -1,5 +1,5 @@
 "use strict";
-var Path = require('./path');
+//var Path = require('./path');
 /**
 */
 if (!String.prototype.format) {
@@ -41,6 +41,6 @@ if (!Array.prototype.each) {
 module.exports = {
   String,
   Object,
-  Path,
+  //Path,
   Array
 };
