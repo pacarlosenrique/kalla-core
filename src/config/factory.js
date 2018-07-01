@@ -12,6 +12,7 @@ var Factory = /**@Class*/ (function() {
         this.cache = new Cache();
     }
     Factory.prototype.get = function(factoryType) {
+       //console.log(this.cache);
         return this.cache.get(factoryType);
     }
     Factory.prototype.all = function() {
@@ -26,7 +27,8 @@ var Factory = /**@Class*/ (function() {
         this.subscribe.sub(index,factoryType, fn);
     */
     Factory.prototype.subSubscribe = function(index, factoryType, fn) {
-        this.injector.register(String("{0}-{1}").format(factoryType, index), fn);
+        this.injector.subRegister(factoryType, index, fn);
+        //this.injector.register(String("{0}-{1}").format(factoryType, index), fn);
     }
     /**
      */

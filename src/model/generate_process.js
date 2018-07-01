@@ -1,16 +1,10 @@
 "use strict";
-
+/***/
 var CreateClass = require('../reflec/create_class');
-var GenerateProcess = (function() {
-  /**
-  */
-  function GenerateProcess() {
-    this._statement = null;
-    this._response = null;
-  }
-  /**
-  */
-  var defineProperty = [{
+/***/
+var GenerateProcess = (function(createClass) {
+  /***/
+  return createClass.make(function GenerateProcess() {}, [{
     key: 'statement',
     get: function() {
       return this._statement;
@@ -26,11 +20,7 @@ var GenerateProcess = (function() {
     set: function(response) {
       this._response = response;
     }
-  }];
-
-  return CreateClass.make(GenerateProcess, defineProperty);
-
-})();
-
+  }]);
+})(CreateClass);
 
 module.exports = GenerateProcess;

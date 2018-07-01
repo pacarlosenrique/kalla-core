@@ -21,11 +21,16 @@
     "diff": "^1.4.0",
     "glop": "^0.3.1",
     "lodash": "^4.17.4",
+    "orientjs": "^2.2.10",
     "watch": "^0.16.0",
     "webpack": "^3.10.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "package-json": "^4.0.1",
+    "read-json-sync": "^2.0.0",
+    "read-package-json": "^2.0.13",
+    "requirejs": "^2.3.5"
   }
 }

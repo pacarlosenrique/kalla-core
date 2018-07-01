@@ -1,4 +1,6 @@
-module.exports = ['$scope', function($scope) {
+module.exports = {
+	fn: ['$scope', function($scope) {
 
-  return "Hello World.";
-}];
+		return "Hello World.";
+	}]
+};

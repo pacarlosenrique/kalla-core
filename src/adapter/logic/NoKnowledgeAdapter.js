@@ -1,4 +1,9 @@
-module.exports = ['$scope', function($scope) {
+module.exports = {
+	fn: ['$scope', 'COMMONS-FILTER:filter', function($scope, $filter) {
 
-  return "Hello World.";
-}];
+		$scope.process = function(statement){
+			return statement;
+		}
+		
+	}]
+};
